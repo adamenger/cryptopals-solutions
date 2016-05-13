@@ -34,7 +34,7 @@ func (p PairList) Swap(i, j int){ p[i], p[j] = p[j], p[i] }
 func main() {
   alpha := regexp.MustCompile(`[a-zA-Z]`)
   char_map := make(map[string]int)
-  file, _ := (ioutil.ReadFile("text.txt"))
+  file, _ := ioutil.ReadFile("text.txt")
 
   for i := 0; i < len(file); i++ {
     char := string(file[i])
